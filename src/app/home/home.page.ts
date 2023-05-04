@@ -10,8 +10,12 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule, CommonModule]
 })
 export class HomePage {
-  item_selecionado: string = 'desenvolvimento_sistemas';
-  trocouCurso(event: any){
-    this.item_selecionado = event['detail']['value'];
-  }
+
+  produtos = [
+    {'id':0, 'nome': 'PS5', 'preco':4000},
+    {'id':1, 'nome': 'PS4', 'preco':2000},
+    {'id':2, 'nome': 'Super Nes', 'preco':250},
+    {'id':3, 'nome': 'Polistation', 'preco':800},
+    {'id':4, 'nome': 'Raspberry', 'preco':150},
+  ];
 }
